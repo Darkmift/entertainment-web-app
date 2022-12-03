@@ -6,8 +6,12 @@ export default function tryCatchWrapper(requestHandler: RequestHandler): any {
         try {
             return await requestHandler(req, res, next);
         } catch (error) {
+            console.error(
+                '🚀 ~ file: tryCatchWrapper.ts:9 ~ return ~ error',
+                error,
+            );
             logger.error(
-                (error as Error).message ||
+                'Wraper logger:->' + (error as Error).message ||
                     'Wrapper Error catch->undefined Error message for ' +
                         requestHandler.name ||
                     'unnamed requestHandler',
