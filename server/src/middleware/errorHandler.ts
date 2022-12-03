@@ -20,8 +20,8 @@ const errorHandler = (
     }
 
     // default to 500 server error
-    logger.error('[ERROR-HANDLER] ' + err.message);
-    return res.status(500).json({ message: err.message });
+    logger.error('[ERROR-HANDLER] ' + err.name + err.message);
+    return res.status(500).json({ message: err.name + '; ' + err.message });
 };
 
 export default errorHandler;
