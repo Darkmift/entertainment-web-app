@@ -1,8 +1,19 @@
-import { MediaItem, User } from '@/models';
-import { JsonDB, Config } from 'node-json-db';
-import { join } from 'path';
+import path from 'path';
+import { Sequelize } from 'sequelize-typescript';
 
-const file = join(__dirname, 'db.json');
-const db = new JsonDB(new Config(file, true, false, '/'));
+const sequelize = new Sequelize({
+    dialect: 'sqlite',
+    storage: path.join(__dirname, 'database.sqlite'),
+    logging: true,
+});
+
+sequelize.addModels([path.join(__dirname, 'models')]);
+
+sequelize.sync({ force: false });
+
+const db = {
+    Sequelize,
+    sequelize,
+};
 
 export default db;
