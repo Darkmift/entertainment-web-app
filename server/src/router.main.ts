@@ -1,4 +1,5 @@
 import { Router, Request, Response } from 'express';
+import authRoutes from '@/api/auth/router';
 
 const router = Router();
 
@@ -16,6 +17,6 @@ router.get('/health', async (req: Request, res: Response) => {
     res.status(200).send(data);
 });
 
-// router.use('/quote', exchangeRatesRoutes);
+router.use('/auth', authRoutes);
 
 export default router;
