@@ -9,6 +9,7 @@ import mainRouter from './router.main';
 import errorHandler from './middleware/errorHandler';
 import path from 'path';
 import db from './db';
+import cookieParser from 'cookie-parser';
 
 validateEnv();
 
@@ -20,6 +21,7 @@ app.use(morgan(LOG_FORMAT, { stream }));
 
 (async () => {
     try {
+        await db.sequelize.sync({ force: true });
         await db.sequelize.authenticate();
         logger.info('Connection has been established successfully.');
     } catch (error) {
@@ -29,6 +31,9 @@ app.use(morgan(LOG_FORMAT, { stream }));
 })();
 
 app.use('/', express.static(path.join(__dirname, 'public')));
+app.use(cookieParser());
+app.use(express.json());
+// need cookieParser middleware before we can do anything with cookies
 
 app.get('/', (req: Request, res: Response) => {
     res.json({ api: 'online' });
