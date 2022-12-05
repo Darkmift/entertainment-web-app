@@ -27,6 +27,7 @@ app.use(morgan(LOG_FORMAT, { stream }));
         logger.info('Connection has been established successfully.');
 
         const { hashAsync } = await import('@services/encryption');
+        const { prettyStringify } = await import('@utils/prettyPrinter');
 
         const emails = [
             'user1@users.com',
@@ -45,7 +46,7 @@ app.use(morgan(LOG_FORMAT, { stream }));
 
         const newUsers = await db.sequelize.models.User.findAll();
         logger.info(
-            '🚀 ~ file: index.ts:44 ~ newUsers' + JSON.stringify(newUsers),
+            '🚀 ~ file: index.ts:44 ~ newUsers' + prettyStringify(newUsers),
         );
     } catch (error) {
         logger.error('Unable to connect to the database:', error);
