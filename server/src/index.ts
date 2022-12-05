@@ -11,6 +11,9 @@ import path from 'path';
 import db from './db';
 import cookieParser from 'cookie-parser';
 
+import swaggerUi from 'swagger-ui-express';
+import swaggerJson from '../swagger.json';
+
 validateEnv();
 
 dotenv.config();
@@ -18,6 +21,8 @@ const app: Express = express();
 const port = PORT || 5000;
 
 app.use(morgan(LOG_FORMAT, { stream }));
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJson));
 
 // sync and test connection to sqlite
 (async () => {
