@@ -1,4 +1,4 @@
-import { MediaCategory, MediaItem, User } from '@/models';
+import { MediaCategory, MediaItem } from '@/models';
 import { logger } from '@/utils/logger';
 import data from '@/data/media.json';
 import db from '@/db';
@@ -8,9 +8,7 @@ const mediaData = data as unknown as MediaItem[];
 const movies = mediaData.filter(m => m.category === MediaCategory.MOVIES);
 const series = mediaData.filter(m => m.category === MediaCategory.TV_SERIES);
 
-export default function getMedia(
-    category: MediaCategory
-): MediaItem[] {
+export default function getMedia(category: MediaCategory): MediaItem[] {
     logger.info('mediaService->Pre' + JSON.stringify({ category }));
 
     switch (category) {
@@ -30,7 +28,6 @@ export async function toggleFavorite(
     mediaItemId: string,
     userId: string,
 ): Promise<boolean | null> {
-    
     const FavoritesModel = db.sequelize.models.Favorites;
     const favoriteEntry = await FavoritesModel.findOne({
         where: { mediId: mediaItemId, userId: userId },
