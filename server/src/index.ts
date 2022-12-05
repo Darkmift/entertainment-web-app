@@ -19,6 +19,7 @@ const port = PORT || 5000;
 
 app.use(morgan(LOG_FORMAT, { stream }));
 
+// sync and test connection to sqlite
 (async () => {
     try {
         await db.sequelize.sync({ force: true });
@@ -30,19 +31,22 @@ app.use(morgan(LOG_FORMAT, { stream }));
     }
 })();
 
+// enable public access to media resources
 app.use('/', express.static(path.join(__dirname, 'public')));
+
 app.use(cookieParser());
 app.use(express.json());
-// need cookieParser middleware before we can do anything with cookies
 
 app.get('/', (req: Request, res: Response) => {
     res.json({ api: 'online' });
 });
 
+//=============
 app.get('/test', async (req: Request, res: Response) => {
     const result = await db.sequelize.models.User.findAll();
     res.json({ result });
 });
+//============
 
 app.all('*', (req: Request, res: Response, next: NextFunction) => {
     req.uuid = uuidv4();
