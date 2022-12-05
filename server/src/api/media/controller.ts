@@ -43,5 +43,5 @@ export async function setOrRemoveFavorite(
             userId: id,
         })}`,
     );
-    res.json(result);
+    return res.json(result);
 }
