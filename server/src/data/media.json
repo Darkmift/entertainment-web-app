@@ -1,457 +1,486 @@
 [
-  {
-    "title": "Beyond Earth",
-    "thumbnail": {
-      "trending": {
-        "small": "beyond-earth/trending/small.jpg",
-        "large": "beyond-earth/trending/large.jpg"
-      },
-      "regular": {
-        "small": "beyond-earth/regular/small.jpg",
-        "medium": "beyond-earth/regular/medium.jpg",
-        "large": "beyond-earth/regular/large.jpg"
-      }
+    {
+        "title": "Beyond Earth",
+        "thumbnail": {
+            "trending": {
+                "small": "beyond-earth/trending/small.jpg",
+                "large": "beyond-earth/trending/large.jpg"
+            },
+            "regular": {
+                "small": "beyond-earth/regular/small.jpg",
+                "medium": "beyond-earth/regular/medium.jpg",
+                "large": "beyond-earth/regular/large.jpg"
+            }
+        },
+        "year": 2019,
+        "category": "Movie",
+        "rating": "PG",
+        "isBookmarked": false,
+        "isTrending": true,
+        "uuid": "5d394e83-39ba-41ec-9504-d3b57b5371a9"
     },
-    "year": 2019,
-    "category": "Movie",
-    "rating": "PG",
-    "isBookmarked": false,
-    "isTrending": true
-  },
-  {
-    "title": "Bottom Gear",
-    "thumbnail": {
-      "trending": {
-        "small": "bottom-gear/trending/small.jpg",
-        "large": "bottom-gear/trending/large.jpg"
-      },
-      "regular": {
-        "small": "bottom-gear/regular/small.jpg",
-        "medium": "bottom-gear/regular/medium.jpg",
-        "large": "bottom-gear/regular/large.jpg"
-      }
+    {
+        "title": "Bottom Gear",
+        "thumbnail": {
+            "trending": {
+                "small": "bottom-gear/trending/small.jpg",
+                "large": "bottom-gear/trending/large.jpg"
+            },
+            "regular": {
+                "small": "bottom-gear/regular/small.jpg",
+                "medium": "bottom-gear/regular/medium.jpg",
+                "large": "bottom-gear/regular/large.jpg"
+            }
+        },
+        "year": 2021,
+        "category": "Movie",
+        "rating": "PG",
+        "isBookmarked": false,
+        "isTrending": true,
+        "uuid": "de8ddc31-399d-4c35-a0d9-e0cbfc1d33d2"
     },
-    "year": 2021,
-    "category": "Movie",
-    "rating": "PG",
-    "isBookmarked": false,
-    "isTrending": true
-  },
-  {
-    "title": "Undiscovered Cities",
-    "thumbnail": {
-      "trending": {
-        "small": "undiscovered-cities/trending/small.jpg",
-        "large": "undiscovered-cities/trending/large.jpg"
-      },
-      "regular": {
-        "small": "undiscovered-cities/regular/small.jpg",
-        "medium": "undiscovered-cities/regular/medium.jpg",
-        "large": "undiscovered-cities/regular/large.jpg"
-      }
+    {
+        "title": "Undiscovered Cities",
+        "thumbnail": {
+            "trending": {
+                "small": "undiscovered-cities/trending/small.jpg",
+                "large": "undiscovered-cities/trending/large.jpg"
+            },
+            "regular": {
+                "small": "undiscovered-cities/regular/small.jpg",
+                "medium": "undiscovered-cities/regular/medium.jpg",
+                "large": "undiscovered-cities/regular/large.jpg"
+            }
+        },
+        "year": 2019,
+        "category": "TV Series",
+        "rating": "E",
+        "isBookmarked": false,
+        "isTrending": true,
+        "uuid": "59ddcbb3-5746-490d-b79e-83fa2d46445b"
     },
-    "year": 2019,
-    "category": "TV Series",
-    "rating": "E",
-    "isBookmarked": false,
-    "isTrending": true
-  },
-  {
-    "title": "1998",
-    "thumbnail": {
-      "trending": {
-        "small": "1998/trending/small.jpg",
-        "large": "1998/trending/large.jpg"
-      },
-      "regular": {
-        "small": "1998/regular/small.jpg",
-        "medium": "1998/regular/medium.jpg",
-        "large": "1998/regular/large.jpg"
-      }
+    {
+        "title": "1998",
+        "thumbnail": {
+            "trending": {
+                "small": "1998/trending/small.jpg",
+                "large": "1998/trending/large.jpg"
+            },
+            "regular": {
+                "small": "1998/regular/small.jpg",
+                "medium": "1998/regular/medium.jpg",
+                "large": "1998/regular/large.jpg"
+            }
+        },
+        "year": 2021,
+        "category": "Movie",
+        "rating": "18+",
+        "isBookmarked": false,
+        "isTrending": true,
+        "uuid": "5155c405-16eb-41dd-aad3-67fc747fbd17"
     },
-    "year": 2021,
-    "category": "Movie",
-    "rating": "18+",
-    "isBookmarked": false,
-    "isTrending": true
-  },
-  {
-    "title": "Dark Side of the Moon",
-    "thumbnail": {
-      "trending": {
-        "small": "dark-side-of-the-moon/trending/small.jpg",
-        "large": "dark-side-of-the-moon/trending/large.jpg"
-      },
-      "regular": {
-        "small": "dark-side-of-the-moon/regular/small.jpg",
-        "medium": "dark-side-of-the-moon/regular/medium.jpg",
-        "large": "dark-side-of-the-moon/regular/large.jpg"
-      }
+    {
+        "title": "Dark Side of the Moon",
+        "thumbnail": {
+            "trending": {
+                "small": "dark-side-of-the-moon/trending/small.jpg",
+                "large": "dark-side-of-the-moon/trending/large.jpg"
+            },
+            "regular": {
+                "small": "dark-side-of-the-moon/regular/small.jpg",
+                "medium": "dark-side-of-the-moon/regular/medium.jpg",
+                "large": "dark-side-of-the-moon/regular/large.jpg"
+            }
+        },
+        "year": 2018,
+        "category": "TV Series",
+        "rating": "PG",
+        "isBookmarked": true,
+        "isTrending": true,
+        "uuid": "a38f3962-295f-4c77-a625-daf05be6dac9"
     },
-    "year": 2018,
-    "category": "TV Series",
-    "rating": "PG",
-    "isBookmarked": true,
-    "isTrending": true
-  },
-  {
-    "title": "The Great Lands",
-    "thumbnail": {
-      "regular": {
-        "small": "the-great-lands/regular/small.jpg",
-        "medium": "the-great-lands/regular/medium.jpg",
-        "large": "the-great-lands/regular/large.jpg"
-      }
+    {
+        "title": "The Great Lands",
+        "thumbnail": {
+            "regular": {
+                "small": "the-great-lands/regular/small.jpg",
+                "medium": "the-great-lands/regular/medium.jpg",
+                "large": "the-great-lands/regular/large.jpg"
+            }
+        },
+        "year": 2019,
+        "category": "Movie",
+        "rating": "E",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "d45ba3b9-6e7d-44f0-acb4-3b486898ff32"
     },
-    "year": 2019,
-    "category": "Movie",
-    "rating": "E",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "The Diary",
-    "thumbnail": {
-      "regular": {
-        "small": "the-diary/regular/small.jpg",
-        "medium": "the-diary/regular/medium.jpg",
-        "large": "the-diary/regular/large.jpg"
-      }
+    {
+        "title": "The Diary",
+        "thumbnail": {
+            "regular": {
+                "small": "the-diary/regular/small.jpg",
+                "medium": "the-diary/regular/medium.jpg",
+                "large": "the-diary/regular/large.jpg"
+            }
+        },
+        "year": 2019,
+        "category": "TV Series",
+        "rating": "PG",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "809e0b9e-fe43-48e0-b04f-2f5882920300"
     },
-    "year": 2019,
-    "category": "TV Series",
-    "rating": "PG",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "Earth’s Untouched",
-    "thumbnail": {
-      "regular": {
-        "small": "earths-untouched/regular/small.jpg",
-        "medium": "earths-untouched/regular/medium.jpg",
-        "large": "earths-untouched/regular/large.jpg"
-      }
+    {
+        "title": "Earth’s Untouched",
+        "thumbnail": {
+            "regular": {
+                "small": "earths-untouched/regular/small.jpg",
+                "medium": "earths-untouched/regular/medium.jpg",
+                "large": "earths-untouched/regular/large.jpg"
+            }
+        },
+        "year": 2017,
+        "category": "Movie",
+        "rating": "18+",
+        "isBookmarked": true,
+        "isTrending": false,
+        "uuid": "f862931c-c494-4b75-a2e3-0cf25faba4c8"
     },
-    "year": 2017,
-    "category": "Movie",
-    "rating": "18+",
-    "isBookmarked": true,
-    "isTrending": false
-  },
-  {
-    "title": "No Land Beyond",
-    "thumbnail": {
-      "regular": {
-        "small": "no-land-beyond/regular/small.jpg",
-        "medium": "no-land-beyond/regular/medium.jpg",
-        "large": "no-land-beyond/regular/large.jpg"
-      }
+    {
+        "title": "No Land Beyond",
+        "thumbnail": {
+            "regular": {
+                "small": "no-land-beyond/regular/small.jpg",
+                "medium": "no-land-beyond/regular/medium.jpg",
+                "large": "no-land-beyond/regular/large.jpg"
+            }
+        },
+        "year": 2019,
+        "category": "Movie",
+        "rating": "E",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "e896f316-3291-4694-bbd3-bcfd84bfc0e0"
     },
-    "year": 2019,
-    "category": "Movie",
-    "rating": "E",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "During the Hunt",
-    "thumbnail": {
-      "regular": {
-        "small": "during-the-hunt/regular/small.jpg",
-        "medium": "during-the-hunt/regular/medium.jpg",
-        "large": "during-the-hunt/regular/large.jpg"
-      }
+    {
+        "title": "During the Hunt",
+        "thumbnail": {
+            "regular": {
+                "small": "during-the-hunt/regular/small.jpg",
+                "medium": "during-the-hunt/regular/medium.jpg",
+                "large": "during-the-hunt/regular/large.jpg"
+            }
+        },
+        "year": 2016,
+        "category": "TV Series",
+        "rating": "PG",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "685082ea-adc4-4b1a-8e66-567cfdb54807"
     },
-    "year": 2016,
-    "category": "TV Series",
-    "rating": "PG",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "Autosport the Series",
-    "thumbnail": {
-      "regular": {
-        "small": "autosport-the-series/regular/small.jpg",
-        "medium": "autosport-the-series/regular/medium.jpg",
-        "large": "autosport-the-series/regular/large.jpg"
-      }
+    {
+        "title": "Autosport the Series",
+        "thumbnail": {
+            "regular": {
+                "small": "autosport-the-series/regular/small.jpg",
+                "medium": "autosport-the-series/regular/medium.jpg",
+                "large": "autosport-the-series/regular/large.jpg"
+            }
+        },
+        "year": 2016,
+        "category": "TV Series",
+        "rating": "18+",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "0ae95538-13b6-49ab-b22d-5a04768d7065"
     },
-    "year": 2016,
-    "category": "TV Series",
-    "rating": "18+",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "Same Answer II",
-    "thumbnail": {
-      "regular": {
-        "small": "same-answer-2/regular/small.jpg",
-        "medium": "same-answer-2/regular/medium.jpg",
-        "large": "same-answer-2/regular/large.jpg"
-      }
+    {
+        "title": "Same Answer II",
+        "thumbnail": {
+            "regular": {
+                "small": "same-answer-2/regular/small.jpg",
+                "medium": "same-answer-2/regular/medium.jpg",
+                "large": "same-answer-2/regular/large.jpg"
+            }
+        },
+        "year": 2017,
+        "category": "Movie",
+        "rating": "E",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "87630cdb-2bae-403e-abe4-ac72723d5266"
     },
-    "year": 2017,
-    "category": "Movie",
-    "rating": "E",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "Below Echo",
-    "thumbnail": {
-      "regular": {
-        "small": "below-echo/regular/small.jpg",
-        "medium": "below-echo/regular/medium.jpg",
-        "large": "below-echo/regular/large.jpg"
-      }
+    {
+        "title": "Below Echo",
+        "thumbnail": {
+            "regular": {
+                "small": "below-echo/regular/small.jpg",
+                "medium": "below-echo/regular/medium.jpg",
+                "large": "below-echo/regular/large.jpg"
+            }
+        },
+        "year": 2016,
+        "category": "TV Series",
+        "rating": "PG",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "4ce098ff-00d4-40b2-8db8-a3d7a04aa9ad"
     },
-    "year": 2016,
-    "category": "TV Series",
-    "rating": "PG",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "The Rockies",
-    "thumbnail": {
-      "regular": {
-        "small": "the-rockies/regular/small.jpg",
-        "medium": "the-rockies/regular/medium.jpg",
-        "large": "the-rockies/regular/large.jpg"
-      }
+    {
+        "title": "The Rockies",
+        "thumbnail": {
+            "regular": {
+                "small": "the-rockies/regular/small.jpg",
+                "medium": "the-rockies/regular/medium.jpg",
+                "large": "the-rockies/regular/large.jpg"
+            }
+        },
+        "year": 2015,
+        "category": "TV Series",
+        "rating": "E",
+        "isBookmarked": true,
+        "isTrending": false,
+        "uuid": "7b4d487e-418e-4a84-88d4-88c63877a4a8"
     },
-    "year": 2015,
-    "category": "TV Series",
-    "rating": "E",
-    "isBookmarked": true,
-    "isTrending": false
-  },
-  {
-    "title": "Relentless",
-    "thumbnail": {
-      "regular": {
-        "small": "relentless/regular/small.jpg",
-        "medium": "relentless/regular/medium.jpg",
-        "large": "relentless/regular/large.jpg"
-      }
+    {
+        "title": "Relentless",
+        "thumbnail": {
+            "regular": {
+                "small": "relentless/regular/small.jpg",
+                "medium": "relentless/regular/medium.jpg",
+                "large": "relentless/regular/large.jpg"
+            }
+        },
+        "year": 2017,
+        "category": "Movie",
+        "rating": "PG",
+        "isBookmarked": true,
+        "isTrending": false,
+        "uuid": "2e83c9bb-d4f3-419c-9160-cf847123b869"
     },
-    "year": 2017,
-    "category": "Movie",
-    "rating": "PG",
-    "isBookmarked": true,
-    "isTrending": false
-  },
-  {
-    "title": "Community of Ours",
-    "thumbnail": {
-      "regular": {
-        "small": "community-of-ours/regular/small.jpg",
-        "medium": "community-of-ours/regular/medium.jpg",
-        "large": "community-of-ours/regular/large.jpg"
-      }
+    {
+        "title": "Community of Ours",
+        "thumbnail": {
+            "regular": {
+                "small": "community-of-ours/regular/small.jpg",
+                "medium": "community-of-ours/regular/medium.jpg",
+                "large": "community-of-ours/regular/large.jpg"
+            }
+        },
+        "year": 2018,
+        "category": "TV Series",
+        "rating": "18+",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "b10be446-5ba5-47ef-bd18-853c141638a1"
     },
-    "year": 2018,
-    "category": "TV Series",
-    "rating": "18+",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "Van Life",
-    "thumbnail": {
-      "regular": {
-        "small": "van-life/regular/small.jpg",
-        "medium": "van-life/regular/medium.jpg",
-        "large": "van-life/regular/large.jpg"
-      }
+    {
+        "title": "Van Life",
+        "thumbnail": {
+            "regular": {
+                "small": "van-life/regular/small.jpg",
+                "medium": "van-life/regular/medium.jpg",
+                "large": "van-life/regular/large.jpg"
+            }
+        },
+        "year": 2015,
+        "category": "Movie",
+        "rating": "PG",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "f431a09a-a20a-4c81-a554-d59287d4a49e"
     },
-    "year": 2015,
-    "category": "Movie",
-    "rating": "PG",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "The Heiress",
-    "thumbnail": {
-      "regular": {
-        "small": "the-heiress/regular/small.jpg",
-        "medium": "the-heiress/regular/medium.jpg",
-        "large": "the-heiress/regular/large.jpg"
-      }
+    {
+        "title": "The Heiress",
+        "thumbnail": {
+            "regular": {
+                "small": "the-heiress/regular/small.jpg",
+                "medium": "the-heiress/regular/medium.jpg",
+                "large": "the-heiress/regular/large.jpg"
+            }
+        },
+        "year": 2021,
+        "category": "Movie",
+        "rating": "PG",
+        "isBookmarked": true,
+        "isTrending": false,
+        "uuid": "390b8ea5-ca72-437e-92ff-d6081d61d6cd"
     },
-    "year": 2021,
-    "category": "Movie",
-    "rating": "PG",
-    "isBookmarked": true,
-    "isTrending": false
-  },
-  {
-    "title": "Off the Track",
-    "thumbnail": {
-      "regular": {
-        "small": "off-the-track/regular/small.jpg",
-        "medium": "off-the-track/regular/medium.jpg",
-        "large": "off-the-track/regular/large.jpg"
-      }
+    {
+        "title": "Off the Track",
+        "thumbnail": {
+            "regular": {
+                "small": "off-the-track/regular/small.jpg",
+                "medium": "off-the-track/regular/medium.jpg",
+                "large": "off-the-track/regular/large.jpg"
+            }
+        },
+        "year": 2017,
+        "category": "Movie",
+        "rating": "18+",
+        "isBookmarked": true,
+        "isTrending": false,
+        "uuid": "ac606d8d-ddb6-442e-afc7-581e83ba2446"
     },
-    "year": 2017,
-    "category": "Movie",
-    "rating": "18+",
-    "isBookmarked": true,
-    "isTrending": false
-  },
-  {
-    "title": "Whispering Hill",
-    "thumbnail": {
-      "regular": {
-        "small": "whispering-hill/regular/small.jpg",
-        "medium": "whispering-hill/regular/medium.jpg",
-        "large": "whispering-hill/regular/large.jpg"
-      }
+    {
+        "title": "Whispering Hill",
+        "thumbnail": {
+            "regular": {
+                "small": "whispering-hill/regular/small.jpg",
+                "medium": "whispering-hill/regular/medium.jpg",
+                "large": "whispering-hill/regular/large.jpg"
+            }
+        },
+        "year": 2017,
+        "category": "Movie",
+        "rating": "E",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "21eece75-7dfe-4466-b6a4-b76dea572a6e"
     },
-    "year": 2017,
-    "category": "Movie",
-    "rating": "E",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "112",
-    "thumbnail": {
-      "regular": {
-        "small": "112/regular/small.jpg",
-        "medium": "112/regular/medium.jpg",
-        "large": "112/regular/large.jpg"
-      }
+    {
+        "title": "112",
+        "thumbnail": {
+            "regular": {
+                "small": "112/regular/small.jpg",
+                "medium": "112/regular/medium.jpg",
+                "large": "112/regular/large.jpg"
+            }
+        },
+        "year": 2013,
+        "category": "TV Series",
+        "rating": "PG",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "064ff2a9-ee78-4947-b81f-555aa785725b"
     },
-    "year": 2013,
-    "category": "TV Series",
-    "rating": "PG",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "Lone Heart",
-    "thumbnail": {
-      "regular": {
-        "small": "lone-heart/regular/small.jpg",
-        "medium": "lone-heart/regular/medium.jpg",
-        "large": "lone-heart/regular/large.jpg"
-      }
+    {
+        "title": "Lone Heart",
+        "thumbnail": {
+            "regular": {
+                "small": "lone-heart/regular/small.jpg",
+                "medium": "lone-heart/regular/medium.jpg",
+                "large": "lone-heart/regular/large.jpg"
+            }
+        },
+        "year": 2017,
+        "category": "Movie",
+        "rating": "E",
+        "isBookmarked": true,
+        "isTrending": false,
+        "uuid": "50d1a732-c5c3-4322-b447-ecc10b9277ae"
     },
-    "year": 2017,
-    "category": "Movie",
-    "rating": "E",
-    "isBookmarked": true,
-    "isTrending": false
-  },
-  {
-    "title": "Production Line",
-    "thumbnail": {
-      "regular": {
-        "small": "production-line/regular/small.jpg",
-        "medium": "production-line/regular/medium.jpg",
-        "large": "production-line/regular/large.jpg"
-      }
+    {
+        "title": "Production Line",
+        "thumbnail": {
+            "regular": {
+                "small": "production-line/regular/small.jpg",
+                "medium": "production-line/regular/medium.jpg",
+                "large": "production-line/regular/large.jpg"
+            }
+        },
+        "year": 2018,
+        "category": "TV Series",
+        "rating": "PG",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "f5352565-e87a-494f-9d46-d1fb95f71393"
     },
-    "year": 2018,
-    "category": "TV Series",
-    "rating": "PG",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "Dogs",
-    "thumbnail": {
-      "regular": {
-        "small": "dogs/regular/small.jpg",
-        "medium": "dogs/regular/medium.jpg",
-        "large": "dogs/regular/large.jpg"
-      }
+    {
+        "title": "Dogs",
+        "thumbnail": {
+            "regular": {
+                "small": "dogs/regular/small.jpg",
+                "medium": "dogs/regular/medium.jpg",
+                "large": "dogs/regular/large.jpg"
+            }
+        },
+        "year": 2016,
+        "category": "TV Series",
+        "rating": "E",
+        "isBookmarked": true,
+        "isTrending": false,
+        "uuid": "8cee9eeb-496a-47bd-9a74-418b406c62a0"
     },
-    "year": 2016,
-    "category": "TV Series",
-    "rating": "E",
-    "isBookmarked": true,
-    "isTrending": false
-  },
-  {
-    "title": "Asia in 24 Days",
-    "thumbnail": {
-      "regular": {
-        "small": "asia-in-24-days/regular/small.jpg",
-        "medium": "asia-in-24-days/regular/medium.jpg",
-        "large": "asia-in-24-days/regular/large.jpg"
-      }
+    {
+        "title": "Asia in 24 Days",
+        "thumbnail": {
+            "regular": {
+                "small": "asia-in-24-days/regular/small.jpg",
+                "medium": "asia-in-24-days/regular/medium.jpg",
+                "large": "asia-in-24-days/regular/large.jpg"
+            }
+        },
+        "year": 2020,
+        "category": "TV Series",
+        "rating": "PG",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "72eb11e2-df9b-41d3-ac75-9ebc3da7be2d"
     },
-    "year": 2020,
-    "category": "TV Series",
-    "rating": "PG",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "The Tasty Tour",
-    "thumbnail": {
-      "regular": {
-        "small": "the-tasty-tour/regular/small.jpg",
-        "medium": "the-tasty-tour/regular/medium.jpg",
-        "large": "the-tasty-tour/regular/large.jpg"
-      }
+    {
+        "title": "The Tasty Tour",
+        "thumbnail": {
+            "regular": {
+                "small": "the-tasty-tour/regular/small.jpg",
+                "medium": "the-tasty-tour/regular/medium.jpg",
+                "large": "the-tasty-tour/regular/large.jpg"
+            }
+        },
+        "year": 2016,
+        "category": "TV Series",
+        "rating": "PG",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "fe2de254-80fa-44db-bfed-16662d5f4ff6"
     },
-    "year": 2016,
-    "category": "TV Series",
-    "rating": "PG",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "Darker",
-    "thumbnail": {
-      "regular": {
-        "small": "darker/regular/small.jpg",
-        "medium": "darker/regular/medium.jpg",
-        "large": "darker/regular/large.jpg"
-      }
+    {
+        "title": "Darker",
+        "thumbnail": {
+            "regular": {
+                "small": "darker/regular/small.jpg",
+                "medium": "darker/regular/medium.jpg",
+                "large": "darker/regular/large.jpg"
+            }
+        },
+        "year": 2017,
+        "category": "Movie",
+        "rating": "18+",
+        "isBookmarked": true,
+        "isTrending": false,
+        "uuid": "97af7f08-df60-4f0f-b281-4bc0b0ff9cf9"
     },
-    "year": 2017,
-    "category": "Movie",
-    "rating": "18+",
-    "isBookmarked": true,
-    "isTrending": false
-  },
-  {
-    "title": "Unresolved Cases",
-    "thumbnail": {
-      "regular": {
-        "small": "unresolved-cases/regular/small.jpg",
-        "medium": "unresolved-cases/regular/medium.jpg",
-        "large": "unresolved-cases/regular/large.jpg"
-      }
+    {
+        "title": "Unresolved Cases",
+        "thumbnail": {
+            "regular": {
+                "small": "unresolved-cases/regular/small.jpg",
+                "medium": "unresolved-cases/regular/medium.jpg",
+                "large": "unresolved-cases/regular/large.jpg"
+            }
+        },
+        "year": 2018,
+        "category": "TV Series",
+        "rating": "18+",
+        "isBookmarked": false,
+        "isTrending": false,
+        "uuid": "7fbaaacf-69b7-492d-a40c-1369a53affc3"
     },
-    "year": 2018,
-    "category": "TV Series",
-    "rating": "18+",
-    "isBookmarked": false,
-    "isTrending": false
-  },
-  {
-    "title": "Mission: Saturn",
-    "thumbnail": {
-      "regular": {
-        "small": "mission-saturn/regular/small.jpg",
-        "medium": "mission-saturn/regular/medium.jpg",
-        "large": "mission-saturn/regular/large.jpg"
-      }
-    },
-    "year": 2017,
-    "category": "Movie",
-    "rating": "PG",
-    "isBookmarked": true,
-    "isTrending": false
-  }
+    {
+        "title": "Mission: Saturn",
+        "thumbnail": {
+            "regular": {
+                "small": "mission-saturn/regular/small.jpg",
+                "medium": "mission-saturn/regular/medium.jpg",
+                "large": "mission-saturn/regular/large.jpg"
+            }
+        },
+        "year": 2017,
+        "category": "Movie",
+        "rating": "PG",
+        "isBookmarked": true,
+        "isTrending": false,
+        "uuid": "2cdcc566-5cf2-4f40-9372-0a1f60a88c27"
+    }
 ]
