@@ -1,7 +1,7 @@
 import { joiValidateMiddleware } from '@/middleware/validateRequest';
 import tryCatchWrapper from '@/utils/tryCatchWrapper';
 import { Router, Request, Response } from 'express';
-import { register } from './controller';
+import { login, register } from './controller';
 
 const router = Router();
 
@@ -13,6 +13,11 @@ router.post(
     '/register',
     joiValidateMiddleware('authUser', 'body'),
     tryCatchWrapper(register),
+);
+router.post(
+    '/login',
+    joiValidateMiddleware('authUser', 'body'),
+    tryCatchWrapper(login),
 );
 
 export default router;
