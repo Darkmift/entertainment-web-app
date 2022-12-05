@@ -2,17 +2,21 @@ import { logger } from '@/utils/logger';
 import { Request, Response, NextFunction } from 'express';
 import getMedia, { getFavoriteList, toggleFavorite } from './service';
 
-export async function getAll(req: Request, res: Response, next: NextFunction) {
+export async function getAll(req: Request, res: Response) {
     const { category } = req.body;
     logger.info('category controller: category-> ' + category);
     const result = await getMedia(category);
     res.json(result);
 }
 
-export async function getFavorites(req: Request, res: Response) {
+export async function getFavorites(
+    req: Request,
+    res: Response,
+    next: NextFunction,
+) {
     // type safety
     if (!req?.user?.email) {
-        throw new Error('getFavorites-> no user data');
+        return next(new Error('getFavorites-> no user data'));
     }
     const { email, id } = req.user;
     const favorites = await getFavoriteList(id);
@@ -26,8 +30,7 @@ export async function setOrRemoveFavorite(
 ) {
     // type safety
     if (!req.user?.id) {
-        logger.error('setOrRemoveFavorite-> no user data');
-        return;
+        return next(new Error('setOrRemoveFavorite-> no user data'));
     }
 
     const { id } = req.user;
