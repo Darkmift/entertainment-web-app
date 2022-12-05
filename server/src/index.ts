@@ -41,13 +41,6 @@ app.get('/', (req: Request, res: Response) => {
     res.json({ api: 'online' });
 });
 
-//=============
-app.get('/test', async (req: Request, res: Response) => {
-    const result = await db.sequelize.models.User.findAll();
-    res.json({ result });
-});
-//============
-
 app.all('*', (req: Request, res: Response, next: NextFunction) => {
     req.uuid = uuidv4();
     next();
