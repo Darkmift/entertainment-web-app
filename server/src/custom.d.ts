@@ -6,6 +6,8 @@ declare namespace Express {
             id: decodedToken.userId;
         };
         body?: {
+            mediaId?: string;
+            category?: MediaCategory;
             userId?: string;
             favoriteItem?: { mediaItemId?: string; toggled?: boolean };
         };
