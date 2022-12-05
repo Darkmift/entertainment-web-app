@@ -2,6 +2,9 @@ import { logger } from '@/utils/logger';
 import { Request, Response, NextFunction } from 'express';
 import Joi from 'Joi';
 
+import data from '@/data/media.json';
+const mediaIds = data.map(mediaItem => mediaItem.uuid);
+
 interface Ischemas {
     [key: string]: Joi.ObjectSchema;
 }
@@ -14,9 +17,10 @@ const schemas: Ischemas = {
     getAll: Joi.object({
         category: Joi.string().valid('all', 'movies', 'tv_series'),
     }),
+    toggleFavorite: Joi.object({ mediaId: Joi.string().valid(...mediaIds) }),
 };
 
-type schemaNameType = 'authUser' | 'getAll';
+type schemaNameType = 'authUser' | 'getAll' | 'toggleFavorite';
 type payloadType = 'body' | 'query';
 
 export function joiValidateMiddleware(

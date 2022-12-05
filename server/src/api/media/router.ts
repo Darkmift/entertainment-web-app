@@ -21,6 +21,11 @@ router.post(
 router.post('/favorites', authMiddleware, tryCatchWrapper(getFavorites));
 
 //set or remove favorite for user
-router.put('/favorites', authMiddleware, tryCatchWrapper(setOrRemoveFavorite));
+router.put(
+    '/favorites',
+    authMiddleware,
+    joiValidateMiddleware('toggleFavorite', 'body'),
+    tryCatchWrapper(setOrRemoveFavorite),
+);
 
 export default router;
