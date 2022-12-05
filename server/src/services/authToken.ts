@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 import { SECRET_KEY } from '@config';
 
 const options: jwt.SignOptions = {
-    algorithm: 'RS256',
+    // algorithm: 'RS256',
     // expiresIn: 60 * 60 * 60,
 };
 
