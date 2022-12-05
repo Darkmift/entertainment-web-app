@@ -25,6 +25,28 @@ app.use(morgan(LOG_FORMAT, { stream }));
         await db.sequelize.sync({ force: true });
         await db.sequelize.authenticate();
         logger.info('Connection has been established successfully.');
+
+        const { hashAsync } = await import('@services/encryption');
+
+        const emails = [
+            'user1@users.com',
+            'user2@users.com',
+            'user3@users.com',
+            'user4@users.com',
+        ];
+
+        await db.sequelize.models.User.bulkCreate(
+            await Promise.all(
+                emails.map(async email => {
+                    return { email, password: await hashAsync(email) };
+                }),
+            ),
+        );
+
+        const newUsers = await db.sequelize.models.User.findAll();
+        logger.info(
+            '🚀 ~ file: index.ts:44 ~ newUsers' + JSON.stringify(newUsers),
+        );
     } catch (error) {
         logger.error('Unable to connect to the database:', error);
         process.exit(1);
