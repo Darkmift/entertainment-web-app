@@ -1,7 +1,7 @@
 import { User } from '@/db/models/User';
 import { sign } from '@/services/authToken';
 import { logger } from '@/utils/logger';
-import { compare, hash } from '@services/encryption';
+import { compareAsync, hashAsync } from '@services/encryption';
 
 export async function signup(email: string, password: string) {
     const modelExists = await User.findOne({ where: { email } });
@@ -9,7 +9,7 @@ export async function signup(email: string, password: string) {
         throw new Error('email not available');
     }
 
-    const hashedPassword = hash(password);
+    const hashedPassword = await hashAsync(password);
 
     const newUser = await User.create({
         email,
@@ -27,9 +27,9 @@ export async function signIn(email: string, password: string) {
         throw new Error('not authorized');
     }
 
-    const hashedPassword = compare(password, modelExists.password);
+    const hashedPassword = await compareAsync(password, modelExists.password);
 
-    if (!hashedPassword) {
+    if (hashedPassword === false) {
         logger.error('login failed: pw mismatch');
         throw new Error('not authorized');
     }
