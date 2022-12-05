@@ -23,6 +23,7 @@ export type MediaItem = {
     rating: 'PG' | 'E' | '18+';
     isBookmarked: boolean;
     isTrending: boolean;
+    uuid: string;
 };
 
 export type User = {
