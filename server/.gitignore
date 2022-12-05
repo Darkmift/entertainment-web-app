@@ -135,3 +135,6 @@ src/db/*.json
 # sqlite
 *.database
 src/db/*.sqlite
+
+# scripts
+scripts
