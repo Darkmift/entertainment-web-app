@@ -1,3 +1,4 @@
+import { joiValidateMiddleware } from '@/middleware/validateRequest';
 import authMiddleware from '@/middleware/validateToken';
 import tryCatchWrapper from '@/utils/tryCatchWrapper';
 import { Router } from 'express';
@@ -9,7 +10,11 @@ router.get('/', (req, res) => {
     res.send('api media is running');
 });
 
-router.get('/all', tryCatchWrapper(getAll));
-router.get('/favorites', authMiddleware, tryCatchWrapper(getFavorites));
+router.post(
+    '/all',
+    joiValidateMiddleware('getAll', 'body'),
+    tryCatchWrapper(getAll),
+);
+router.post('/favorites', authMiddleware, tryCatchWrapper(getFavorites));
 
 export default router;
