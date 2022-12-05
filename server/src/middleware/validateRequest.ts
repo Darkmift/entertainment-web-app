@@ -11,13 +11,16 @@ const schemas: Ischemas = {
         password: Joi.string().required(),
         email: Joi.string().email().required(),
     }),
+    getAll: Joi.object({
+        category: Joi.string().valid('all', 'movies', 'tv_series'),
+    }),
 };
 
-type schemaName = 'authUser';
+type schemaNameType = 'authUser' | 'getAll';
 type payloadType = 'body' | 'query';
 
 export function joiValidateMiddleware(
-    schemaName: schemaName,
+    schemaName: schemaNameType,
     payloadType: payloadType,
 ) {
     return (req: Request, res: Response, next: NextFunction) => {
