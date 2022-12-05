@@ -7,7 +7,9 @@ import {
 } from 'sequelize-typescript';
 import { User } from './User';
 
-@Table
+@Table({
+    indexes: [{ fields: ['userId', 'mediId'], unique: true }],
+})
 export class Favorites extends Model {
     @ForeignKey(() => User)
     @Column
