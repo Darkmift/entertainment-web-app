@@ -8,6 +8,8 @@ const mediaData = data as unknown as MediaItem[];
 const movies = mediaData.filter(m => m.category === MediaCategory.MOVIES);
 const series = mediaData.filter(m => m.category === MediaCategory.TV_SERIES);
 
+const _FavoritesModel = db.sequelize.models.Favorites;
+
 export default function getMedia(category: MediaCategory): MediaItem[] {
     logger.info('mediaService->Pre' + JSON.stringify({ category }));
 
@@ -28,8 +30,7 @@ export async function toggleFavorite(
     mediaItemId: string,
     userId: string,
 ): Promise<boolean | null> {
-    const FavoritesModel = db.sequelize.models.Favorites;
-    const favoriteEntry = await FavoritesModel.findOne({
+    const favoriteEntry = await _FavoritesModel.findOne({
         where: { mediId: mediaItemId, userId: userId },
     });
 
@@ -41,7 +42,7 @@ export async function toggleFavorite(
         logger.info(
             'Favorites create entry:' + JSON.stringify({ mediaItemId, userId }),
         );
-        await FavoritesModel.create({
+        await _FavoritesModel.create({
             userId,
             mediId: mediaItemId,
         });
@@ -51,14 +52,14 @@ export async function toggleFavorite(
     logger.info(
         'Favorites delete entry:' + JSON.stringify({ mediaItemId, userId }),
     );
-    await FavoritesModel.destroy({
+    await _FavoritesModel.destroy({
         where: { mediId: mediaItemId, userId: userId },
     });
     return false;
 }
 
 export async function getFavoriteList(id: string): Promise<Favorites[]> {
-    const favorites = await db.sequelize.models.Favorites.findAll({
+    const favorites = await _FavoritesModel.findAll({
         where: { userId: id },
     });
 
