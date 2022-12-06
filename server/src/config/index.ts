@@ -24,4 +24,5 @@ export const {
     LOG_DIR,
     ORIGIN,
     MUTE_LOGS,
+    TEST_MODE,
 } = process.env as ConfigVars;

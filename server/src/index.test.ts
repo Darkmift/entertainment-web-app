@@ -1,11 +1,13 @@
 import { describe, afterEach, beforeAll, expect, test } from '@jest/globals';
 import supertest from 'supertest';
-import server from './index';
+import initServer from './index';
 
 describe('Server', () => {
     let request: any;
+    let server: any;
 
     beforeAll(async () => {
+        server = await initServer();
         request = supertest(server);
     });
 
