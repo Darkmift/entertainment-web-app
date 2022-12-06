@@ -1,7 +1,6 @@
 import express, { Express, NextFunction, Request, Response } from 'express';
 import morgan from 'morgan';
-import dotenv from 'dotenv';
-import { NODE_ENV, PORT, LOG_FORMAT } from '@config';
+import { NODE_ENV, PORT, LOG_LEVEL, LOG_FORMAT, MUTE_LOGS } from '@config';
 import validateEnv from './utils/validateEnv';
 import { logger, stream } from '@utils/logger';
 import { v4 as uuidv4 } from 'uuid';
@@ -16,7 +15,6 @@ import swaggerJson from '../swagger.json';
 
 validateEnv();
 
-dotenv.config();
 const app: Express = express();
 const port = PORT || 5000;
 
@@ -80,7 +78,10 @@ app.use('/api', mainRouter);
 app.use(errorHandler);
 
 const server = app.listen(port, () => {
+    if (MUTE_LOGS) return;
     console.log(`⚡️[NODE_ENV]: ${NODE_ENV}`);
+    console.log(`⚡️[MUTE_LOGS]: ${MUTE_LOGS}`);
+    console.log(`⚡️[LOG_LEVEL]: ${LOG_LEVEL}`);
     console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
 
     logger.info(`=================================`);
@@ -96,3 +97,6 @@ process.on('SIGTERM', () => {
         console.log('Http server closed.');
     });
 });
+
+// for jest
+export default server;
