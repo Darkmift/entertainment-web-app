@@ -33,9 +33,6 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJson));
 const initDb = async () => {
     try {
         await db.sequelize.authenticate();
-        await db.sequelize.query(
-            `select 'drop table ' || name || ';' from sqlite_master where type = 'table';`,
-        );
         await db.sequelize.sync({ force: true });
         logger.info('Connection has been established successfully.');
 
@@ -125,6 +122,7 @@ const initServer = async () => {
     }
 };
 
+// in testing we invoke from test env not here
 if (!(TEST_MODE === 'true')) {
     initServer();
 }
