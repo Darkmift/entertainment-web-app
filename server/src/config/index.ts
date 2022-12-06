@@ -1,7 +1,8 @@
 import { config } from 'dotenv';
 config({
     path: `.env.${process.env.NODE_ENV || 'development'}.local`,
-    debug: true,
+    debug: process.env.MUTE_LOGS ? false : true,
+    override: true,
 });
 
 type ConfigVars = {
@@ -19,6 +20,8 @@ export const {
     DB_DATABASE,
     SECRET_KEY,
     LOG_FORMAT,
+    LOG_LEVEL,
     LOG_DIR,
     ORIGIN,
+    MUTE_LOGS,
 } = process.env as ConfigVars;
