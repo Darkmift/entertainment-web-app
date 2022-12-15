@@ -1,7 +1,8 @@
 //100
 @font-face {
     font-family: 'Outfit';
-    src: url('/assets/fonts/outfit/Outfit-Thin.tff') format('truetype');
+    src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf')
+        format('truetype');
 }
 
 $mainFont: 'Outfit';
@@ -13,7 +14,9 @@ $fontWeight2: 300;
 @mixin outletFontMixinNormal {
     font-family: $mainFont;
     font-style: normal;
-    font-weight: 300;
+    font-variation-settings: 'wght' 300;
+
+    // font-weight: 300;
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -0.5px;
