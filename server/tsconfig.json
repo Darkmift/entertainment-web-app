@@ -36,6 +36,12 @@
             "@utils/*": ["utils/*"]
         }
     },
-    "include": ["src/**/*.ts", "src/**/*.json", ".env"],
+    "include": [
+        "__tests__/**/*.ts",
+        "jest.config.ts",
+        "src/**/*.ts",
+        "src/**/*.json",
+        ".env"
+    ],
     "exclude": ["node_modules", "src/http", "src/logs", "src/tests"]
 }

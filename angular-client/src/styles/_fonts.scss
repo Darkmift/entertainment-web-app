@@ -1,0 +1,57 @@
+//100
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/outfit/Outfit-Thin.tff') format('truetype');
+}
+
+$mainFont: 'Outfit';
+
+$fontWeight1: 500;
+$fontWeight2: 300;
+
+// outfit normal mixins
+@mixin outletFontMixinNormal {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    color: $white;
+}
+
+@mixin outletFontMixinMedium {
+    @include outletFontMixinNormal;
+    line-height: 24px;
+    font-size: 30px;
+    letter-spacing: normal;
+}
+
+@mixin outletFontMixinSmall {
+    @include outletFontMixinNormal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: normal;
+}
+
+// outfit light mixins
+@mixin outletLightFontMixinNormal {
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    color: $white;
+}
+
+@mixin outletLightFontMixinMedium {
+    @include outletLightFontMixinNormal;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+@mixin outletFontMixinSmall {
+    @include outletLightFontMixinNormal;
+    font-size: 13px;
+    line-height: 16px;
+}

@@ -138,3 +138,6 @@ src/db/*.sqlite
 
 # scripts
 scripts
+
+# html test generated
+test-report.html
